@@ -27,7 +27,7 @@ body {}
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
-    background-image: url(https://img.freepik.com/free-photo/rough-metallic-surface-texture_23-2148953918.jpg);
+    background-image: url(texture.jpg);
     background-size: cover;
     opacity: 0.6;
     mix-blend-mode: color-dodge;
@@ -106,5 +106,11 @@ h1 {
 @keyframes disappear {
     100% {
         display: none;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .vignette {
+        background-image: url(texturemobile.jpg);
     }
 }
