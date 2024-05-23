@@ -137,6 +137,19 @@ ul {
     width: 80%;
     justify-content: center;
     border-bottom: 2px solid rgb(0, 255, 0);
+    position: relative;
+}
+
+ul::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 100%;
+    border-left: 2px solid rgb(0, 255, 0);
+    border-right: 2px solid rgb(0, 255, 0);
+    bottom: 0;
 }
 
 li > p {
@@ -157,8 +170,8 @@ li {
 }
 
 li.active {
-    border-left: 3px solid rgb(0, 255, 0);
-    border-right: 3px solid rgb(0, 255, 0);
+    border-left: 2px solid rgb(0, 255, 0);
+    border-right: 2px solid rgb(0, 255, 0);
     border-radius: 6px 6px 0px 0px;
     border-bottom: 2px solid rgb(0, 14, 0);
 }
@@ -176,7 +189,7 @@ li.active {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: disappear 3s forwards linear;
-    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 0, 0.623));
 }
 
 .displayafter {
