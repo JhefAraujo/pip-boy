@@ -28,16 +28,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vw;
-        width: 100svh;
+        height: 100svh;
+        width: 100vw;
         overflow: hidden;
-        transform: rotate(90deg);
-        transform-origin: center center;
         position: absolute;
     }
 
     li > p {
-        font-size: 0.9em !important;
+        font-size: 3vw !important;
+    }
+
+    ul {
+        column-gap: 0 !important;
+        width: 90% !important;
     }
 
     html {
@@ -49,9 +52,11 @@ body {
         justify-content: center;
         position: relative;
     }
+    
+    .loader {
+        width: 50% !important;
+    }
 }
-
-
 
 body::after {
     content: "";
