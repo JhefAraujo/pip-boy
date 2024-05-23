@@ -10,6 +10,8 @@
     cursor: url(fallout.cur), auto;
 }
 
+/* comentário para tirar bug */
+
 *::selection {
     background-color: rgb(0, 255, 0);
     color: white;
@@ -48,6 +50,8 @@ body {
         position: relative;
     }
 }
+
+
 
 body::after {
     content: "";
