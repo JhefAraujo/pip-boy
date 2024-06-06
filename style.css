@@ -290,4 +290,9 @@ section {
 
 section.main {
     display: block;
+    width: 80%;
+    height: 70%;
+    border: 1px solid rgb(0, 247, 0);
+    margin-top: 2%;
+    border-radius: 3px;
 }
