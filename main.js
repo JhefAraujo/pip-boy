@@ -3,4 +3,10 @@ function changeSection(section) {
     document.querySelector("." + section).classList.add('active');
     document.querySelector('.main').classList.remove('main');
     document.getElementById(section).classList.add('main');
+    document.getElementsByClassName('eff')[0].style.display = 'block';
+    document.getElementsByClassName('eff')[1].style.display = 'block';
+    setTimeout(() => {
+        document.getElementsByClassName('eff')[0].style.display = 'none';
+        document.getElementsByClassName('eff')[1].style.display = 'none';
+    }, 100);
 }

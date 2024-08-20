@@ -263,6 +263,27 @@ section.main {
     border-radius: 3px;
 }
 
+.aft {
+    display: none;
+    position: absolute;
+    top: 0;
+    opacity: .7;
+    left: 0;
+    transform: translate(-3px, -3px);
+    animation: none;
+}
+
+.bef {
+    display: none;
+    opacity: .7;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    transform: translate(3px, 3px);
+    animation: none;
+}
+
 
 @media screen and (max-width: 568px) {
     body {
