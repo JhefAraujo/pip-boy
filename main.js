@@ -17,3 +17,16 @@ function playAudio() {
         audio.muted = false;
     }, 10);
 }
+
+function pauseAudio() {
+    var audio = document.getElementById('audio');
+    audio.muted = true;
+}
+
+window.onblur = function () {
+    pauseAudio();
+}
+
+window.onfocus = function () {
+    playAudio();
+}
