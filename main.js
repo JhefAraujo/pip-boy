@@ -10,3 +10,10 @@ function changeSection(section) {
         document.getElementsByClassName('eff')[1].style.display = 'none';
     }, 100);
 }
+
+function playAudio() {
+    setTimeout(() => {
+        var audio = document.getElementById('audio');
+        audio.muted = false;
+    }, 10);
+}

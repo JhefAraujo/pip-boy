@@ -6,7 +6,10 @@
     <title>Nara Syndrome</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="playAudio()">
+    <video autoplay muted style="position: absolute; z-index: 99999;" id="audio" src="sound-of-waves-marine-drive-mumbai.mp3"></video>
+
+    <button id="playButton" style="display: none;">Tocar Áudio</button>
     <div class="screen">
         <div class="loader"></div>
     </div>
@@ -39,7 +42,6 @@
             
         </section>
         <section class="" id="radio">
-            
         </section>
     </div>
     <div class="displayafter aft eff">
