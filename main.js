@@ -12,15 +12,10 @@ function changeSection(section) {
 }
 
 function playAudio() {
-    try {
         setTimeout(() => {
             var audio = document.getElementById('audio');
             audio.muted = false;
-        }, 10);
-    } catch (error) {
-        window.alert('Error: ' + error);
-    }
-
+        }, 100);
 }
 
 function pauseAudio() {
