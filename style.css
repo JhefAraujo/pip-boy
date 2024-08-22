@@ -42,7 +42,7 @@ body::after {
 }
 
 .screen {
-    width: 100svh;
+    width: 100vw;
     height: 100svh;
     background-color: rgb(0, 14, 0);
     position: absolute;
@@ -320,5 +320,9 @@ section.main {
     
     .loader {
         width: 50%;
+    }
+
+    header {
+        height: 10%;
     }
 }
