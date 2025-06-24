@@ -22,11 +22,3 @@ function pauseAudio() {
     var audio = document.getElementById('audio');
     audio.muted = true;
 }
-
-window.onblur = function () {
-    pauseAudio();
-}
-
-window.onfocus = function () {
-    playAudio();
-}
